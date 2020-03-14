@@ -25,7 +25,7 @@ public class Parser {
 			String category = "";
 			
 			while ((line = inReader.readLine()) != null) {
-				if (line.equals("\n")) {
+				if (line.trim().equals("")) {
 					counter = 0;
 				}
 				if (counter == 1) {
@@ -34,7 +34,7 @@ public class Parser {
 				else if (counter == 2) {
 					title = line;
 				}
-				else {
+				else if (counter == 3) {
 					category = line;
 					bookList.add(new Book(author, title, category));
 				}

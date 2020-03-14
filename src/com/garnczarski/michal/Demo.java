@@ -13,7 +13,8 @@ public class Demo {
 		try {
 			booklist = parser.parse("books.txt");
 			for (Book book : booklist) {
-				System.out.println(book.getAuthor());
+				System.out.println(book.getAuthor() + " " + book.getTitle() + " " + book.getCategory());
+				System.out.println();
 			}
 		}
 		catch (Exception e) {
