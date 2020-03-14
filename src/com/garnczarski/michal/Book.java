@@ -10,4 +10,18 @@ public class Book {
 		this.title = title;
 		this.category = category;
 	}
+
+	public String getAuthor() {
+		return author;
+	}
+
+	public String getTitle() {
+		return title;
+	}
+
+	public String getCategory() {
+		return category;
+	}
+	
+	
 }
