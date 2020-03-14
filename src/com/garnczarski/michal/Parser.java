@@ -14,10 +14,10 @@ public class Parser {
 		File in = new File(pathToFile);
 
 		String line = "";
-//		BufferedReader inReader = null;
+		BufferedReader inReader = null;
 		
 		try {
-			BufferedReader inReader = new BufferedReader(new FileReader(in));
+			inReader = new BufferedReader(new FileReader(in));
 			
 			int counter = 1;
 			String author = "";
@@ -51,7 +51,7 @@ public class Parser {
 			e.printStackTrace();
 		}
 		finally {
-//			inReader.close();
+			inReader.close();
 		}
 
 		return bookList;
