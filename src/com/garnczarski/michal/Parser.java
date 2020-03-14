@@ -26,6 +26,9 @@ public class Parser {
 			
 			while ((line = inReader.readLine()) != null) {
 				if (line.trim().equals("")) {
+					if (counter == 2 || counter == 3) {
+						System.out.println("Incomplete record ommited.");
+					}
 					counter = 0;
 				}
 				if (counter == 1) {

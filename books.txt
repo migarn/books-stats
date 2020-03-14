@@ -31,5 +31,19 @@ Ksi¹¿ka 1
 kategoria 1
 
 Imiê Nazwisko
-Ksi¹¿ka 1
 kategoria 1
+
+Imiê Nazwisko 7
+Ksi¹¿ka 4
+kategoria 4
+
+Imiê Nazwisko 13
+
+Imiê Nazwisko 3
+Ksi¹¿ka 11
+kategoria 12
+
+
+Imiê Nazwisko -8
+Ksi¹¿ka 10
+kategoria 10
