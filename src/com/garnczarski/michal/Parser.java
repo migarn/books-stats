@@ -14,7 +14,7 @@ public class Parser {
 		File in = new File(pathToFile);
 
 		String line = "";
-		BufferedReader inReader;
+		BufferedReader inReader = null;
 		
 		try {
 			inReader = new BufferedReader(new FileReader(in));
@@ -38,7 +38,10 @@ public class Parser {
 					category = line;
 					bookList.add(new Book(author, title, category));
 				}
-				
+				counter ++;
+				if (counter == 4) {
+					counter = 1;
+				}
 			}
 		}
 		catch (IOException e) {
