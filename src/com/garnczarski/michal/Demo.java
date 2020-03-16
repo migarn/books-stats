@@ -15,6 +15,8 @@ public class Demo {
 			booklist = parser.parse("books.txt");
 			stats.countBooksPerCategory(booklist);
 			stats.topAuthors(booklist);
+			stats.topAuthorsInCategory(booklist, "kategoria 1");
+			stats.topAuthorsInCategory(booklist, "fantastyka");
 			
 //			for (Book book : booklist) {
 //				System.out.println(book.getAuthor() + " " + book.getTitle() + " " + book.getCategory());
