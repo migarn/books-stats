@@ -15,15 +15,15 @@ public class Parser {
 
 		String line = "";
 		BufferedReader inReader = null;
-		
+
 		try {
 			inReader = new BufferedReader(new FileReader(in));
-			
+
 			int counter = 1;
 			String author = "";
 			String title = "";
 			String category = "";
-			
+
 			while ((line = inReader.readLine()) != null) {
 				if (line.trim().equals("")) {
 					if (counter == 2 || counter == 3) {
@@ -33,27 +33,22 @@ public class Parser {
 				}
 				if (counter == 1) {
 					author = line;
-				}
-				else if (counter == 2) {
+				} else if (counter == 2) {
 					title = line;
-				}
-				else if (counter == 3) {
+				} else if (counter == 3) {
 					category = line;
 					bookList.add(new Book(author, title, category));
 				}
-				counter ++;
+				counter++;
 				if (counter == 4) {
 					counter = 1;
 				}
 			}
-		}
-		catch (IOException e) {
+		} catch (IOException e) {
 			e.printStackTrace();
-		}
-		finally {
+		} finally {
 			inReader.close();
 		}
-
 		return bookList;
 	}
 }
