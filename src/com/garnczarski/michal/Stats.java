@@ -70,6 +70,4 @@ public class Stats {
 				.forEach(k -> System.out.println("\t" + k.getKey() + ": " + k.getValue() + " books"));
 
 	}
-	
-	// zrefaktorowac!!!
 }

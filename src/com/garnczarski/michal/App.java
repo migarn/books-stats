@@ -3,7 +3,7 @@ package com.garnczarski.michal;
 import java.io.FileNotFoundException;
 import java.util.List;
 
-public class Demo {
+public class App {
 
 	public static void main(String[] args) throws FileNotFoundException {
 		Parser parser = new Parser();
